@@ -1,11 +1,22 @@
 import React from "react";
-import { NavBarSection, Sidebar } from "../components";
+import {
+  Hero,
+  NavBarSection,
+  Sidebar,
+  SpecialMeal,
+  Newsletter,
+  Footer,
+} from "../components";
 
 const Landing = () => {
   return (
     <>
       <NavBarSection />
       <Sidebar />
+      <Hero />
+      <SpecialMeal />
+      <Newsletter />
+      <Footer />
     </>
   );
 };
