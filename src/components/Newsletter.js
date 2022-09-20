@@ -13,7 +13,7 @@ const Newsletter = () => {
           </p>
         </div>
         <form className="form">
-          <input type="text" className="input" placeholder="Enter Your Email" />
+          <input type="text" className="input" />
           <button className="btn">Get Notified</button>
         </form>
       </section>

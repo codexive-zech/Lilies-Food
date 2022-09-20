@@ -20,7 +20,7 @@ const NavBarSection = () => {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/register">Login</Link>
+              <Link to="/login">Login</Link>
             </li>
             <li>
               <Link to="/register" className="special">

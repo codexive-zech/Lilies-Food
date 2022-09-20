@@ -29,10 +29,6 @@ const NewsletterWrapper = styled.section`
         height: 100%;
         margin-right: 1rem;
         outline: none;
-        &::placeholder {
-          color: var(--primary-background);
-          padding: 1rem;
-        }
       }
 
       .btn {
@@ -82,10 +78,6 @@ const NewsletterWrapper = styled.section`
           height: 7vh;
           margin-right: 0.5rem;
           font-size: 1.5rem;
-          &::placeholder {
-            color: var(--primary-background);
-            font-size: 1rem;
-          }
         }
         .btn {
           padding: 0.5rem 0.85rem;

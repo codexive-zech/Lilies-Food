@@ -26,16 +26,17 @@ const FooterWrapper = styled.section`
     }
   }
 
-  @media screen and (min-width: 992px) {
+  @media screen and (min-width: 768px) {
     .footer {
       display: flex;
       justify-content: space-around;
       align-items: center;
+      height: 20vh;
 
       .company,
       .support,
       .legal {
-        height: 30vh;
+        height: 18vh;
       }
 
       .footer-links {
@@ -48,6 +49,17 @@ const FooterWrapper = styled.section`
       h3 {
         font-size: 1.8rem;
         text-align: left;
+      }
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    .footer {
+      height: 35vh;
+      .company,
+      .support,
+      .legal {
+        height: 30vh;
       }
     }
   }

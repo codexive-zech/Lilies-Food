@@ -6,17 +6,21 @@ import {
   SpecialMeal,
   Newsletter,
   Footer,
+  FooterLast,
 } from "../components";
 
 const Landing = () => {
   return (
     <>
-      <NavBarSection />
-      <Sidebar />
-      <Hero />
-      <SpecialMeal />
-      <Newsletter />
-      <Footer />
+      <section className="landing">
+        <NavBarSection />
+        <Sidebar />
+        <Hero />
+        <SpecialMeal />
+        <Newsletter />
+        <Footer />
+        <FooterLast />
+      </section>
     </>
   );
 };

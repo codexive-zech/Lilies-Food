@@ -24,7 +24,6 @@
 body {
   font-family: "Poppins";
   font-weight: var(--fw-400);
-  background-color: var(--primary-background);
 }
 
 ul {
@@ -98,6 +97,10 @@ a {
   color: var(--mainBlack);
 }
 
+.landing {
+  background-color: var(--primary-background);
+}
+
 .section-center {
   width: var(--width);
   margin: 0 auto;
@@ -113,7 +116,7 @@ a {
   justify-content: space-between;
   align-items: center;
   height: 5rem;
-  margin-top: 1rem;
+  padding-top: 1rem;
 }
 
 .nav-logo {
