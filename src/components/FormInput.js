@@ -1,5 +1,6 @@
 import React from "react";
-const FormInput = ({ type, placeholder, name }) => {
+
+const FormInput = ({ type, placeholder, name, icon }) => {
   return (
     <div className="form-row">
       <input
@@ -8,6 +9,7 @@ const FormInput = ({ type, placeholder, name }) => {
         className="form-input"
         placeholder={placeholder}
       />
+      <span>{icon}</span>
     </div>
   );
 };

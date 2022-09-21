@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import registerImage from "../images/register.png";
 
 const LoginWrapper = styled.section`
   display: flex;
@@ -11,13 +12,12 @@ const LoginWrapper = styled.section`
 
   @media screen and (min-width: 992px) {
     .login-image-container {
-      background-color: rgba(251, 221, 187, 0.51);
       .login-image {
         display: block;
         width: 50vw;
         height: 100vh;
         object-fit: cover;
-        background-color: rgba(251, 221, 187, 0.51);
+        border-radius: 7px;
       }
     }
   }
@@ -54,6 +54,7 @@ const LoginWrapper = styled.section`
         padding: 0.375rem 0.75rem;
         outline: 1px solid var(--primary-clr);
         border: transparent;
+        border-radius: 5px;
       }
 
       .form-input,
@@ -65,6 +66,11 @@ const LoginWrapper = styled.section`
         font-family: inherit;
         color: pink;
         letter-spacing: 5px;
+      }
+
+      .icon,
+      .reg-icon {
+        display: none;
       }
     }
     .btn {
@@ -110,6 +116,7 @@ const LoginWrapper = styled.section`
   @media screen and (min-width: 768px) {
     .form {
       margin-top: 10rem;
+
       .btn {
         width: 84%;
       }
@@ -168,6 +175,26 @@ const LoginWrapper = styled.section`
           font-family: inherit;
           color: pink;
           letter-spacing: 5px;
+        }
+        .icon {
+          display: block;
+          position: absolute;
+          width: 37px;
+          height: 33px;
+          right: 111px;
+          top: 54%;
+          cursor: pointer;
+          font-size: 1rem;
+        }
+        .reg-icon {
+          display: block;
+          position: absolute;
+          width: 37px;
+          height: 33px;
+          right: 111px;
+          top: 63.5%;
+          cursor: pointer;
+          font-size: 1rem;
         }
       }
       .btn {

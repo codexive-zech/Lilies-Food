@@ -4,6 +4,7 @@ import loginImage from "../images/login.png";
 import { Link } from "react-router-dom";
 import FormInput from "../components/FormInput";
 import SecurityImage from "../components/SecurityImage";
+import { FaEye } from "react-icons/fa";
 
 const Login = () => {
   return (
@@ -16,6 +17,7 @@ const Login = () => {
           type="password"
           name="password"
           placeholder="Your Password"
+          icon={<FaEye className="icon" size={1} />}
         />
 
         <button type="button" className="btn">
