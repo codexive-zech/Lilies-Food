@@ -25,14 +25,14 @@ const SpecialMealWrapper = styled.section`
     margin-top: 9rem;
     .meal-head {
       h3 {
-        font-size: 2.5rem;
+        font-size: 36px;
         letter-spacing: 2px;
         margin-bottom: 1.5rem;
       }
       p {
         width: 50vw;
         margin: 0 auto;
-        font-size: 1.1rem;
+        font-size: 18px;
       }
     }
   }

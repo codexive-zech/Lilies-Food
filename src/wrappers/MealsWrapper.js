@@ -51,8 +51,11 @@ const MealsWrapper = styled.section`
 
       .meal-text {
         margin-top: 1rem;
+        h4 {
+          font-size: 27px;
+        }
         p {
-          font-size: 0.85rem;
+          font-size: 18px;
         }
       }
     }

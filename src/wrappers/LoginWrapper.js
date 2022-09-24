@@ -1,10 +1,11 @@
 import styled from "styled-components";
-import registerImage from "../images/register.png";
 
 const LoginWrapper = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100vh;
+  width: 95vw;
 
   .login-image {
     display: none;
@@ -73,6 +74,7 @@ const LoginWrapper = styled.section`
         display: none;
       }
     }
+
     .btn {
       background: var(--primary-background);
       color: var(--primary-clr);
@@ -181,7 +183,7 @@ const LoginWrapper = styled.section`
           position: absolute;
           width: 37px;
           height: 33px;
-          right: 111px;
+          right: 151px;
           top: 54%;
           cursor: pointer;
           font-size: 1rem;
@@ -191,7 +193,7 @@ const LoginWrapper = styled.section`
           position: absolute;
           width: 37px;
           height: 33px;
-          right: 111px;
+          right: 150px;
           top: 63.5%;
           cursor: pointer;
           font-size: 1rem;
@@ -200,7 +202,7 @@ const LoginWrapper = styled.section`
       .btn {
         background: var(--primary-background);
         color: var(--primary-clr);
-        width: 80%;
+        width: 90%;
         margin: 1rem 4rem;
         padding: 0.75rem;
         font-size: 1.2rem;

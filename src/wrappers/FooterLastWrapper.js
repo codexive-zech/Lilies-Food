@@ -5,7 +5,7 @@ const FooterLastWrapper = styled.section`
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #000;
+    background-color: #0b0d17;
     color: var(--color-white);
     padding: 1rem 0.5rem;
     gap: 1.5rem;

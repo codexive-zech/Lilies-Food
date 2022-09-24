@@ -57,7 +57,7 @@ const NewsletterWrapper = styled.section`
         h3 {
           width: 70vw;
           text-align: left;
-          font-size: 2rem;
+          font-size: 36px;
           letter-spacing: 3px;
           font-weight: var(--fw-500);
         }
@@ -65,7 +65,7 @@ const NewsletterWrapper = styled.section`
           width: 40vw;
           text-align: left;
           font-weight: var(--fw-400);
-          font-size: 0.85rem;
+          font-size: 18px;
         }
       }
       .form {
@@ -73,16 +73,18 @@ const NewsletterWrapper = styled.section`
         display: flex;
         justify-content: center;
         .input {
-          border-radius: 0.35rem;
-          border: transparent;
           height: 7vh;
           margin-right: 0.5rem;
-          font-size: 1.5rem;
+          font-size: 18px;
+          background: #f7f7f7;
+          border: 1px solid #b3b3b3;
+          border-radius: 5px;
         }
         .btn {
           padding: 0.5rem 0.85rem;
           height: 7vh;
           font-weight: bold;
+          font-size: 18px;
         }
       }
     }

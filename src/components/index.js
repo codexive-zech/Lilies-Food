@@ -6,6 +6,9 @@ import Meals from "./Meals";
 import Newsletter from "./Newsletter";
 import Footer from "./Footer";
 import FooterLast from "./FooterLast";
+import DashboardSidebar from "./DashboardSidebar";
+import SmallDashboardSidebar from "./SmallDashboardSidebar";
+import DashboardNav from "./DashboardNav";
 
 export {
   NavBarSection,
@@ -16,4 +19,7 @@ export {
   Newsletter,
   Footer,
   FooterLast,
+  DashboardSidebar,
+  SmallDashboardSidebar,
+  DashboardNav,
 };

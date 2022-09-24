@@ -55,12 +55,12 @@ const HeroWrapper = styled.section`
       width: 45vw;
       margin: 0 auto;
       h3 {
-        font-size: 2.8rem;
+        font-size: 50px;
         letter-spacing: 2.5px;
         font-weight: var(--fw-700);
       }
       p {
-        font-size: 1.3rem;
+        font-size: 18px;
         margin-top: 2rem;
         letter-spacing: 2px;
         font-weight: var(--fw-500);

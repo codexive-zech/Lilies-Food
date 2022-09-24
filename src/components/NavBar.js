@@ -3,7 +3,7 @@ import logo from "../images/liliesLogo.png";
 import { Link } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 import { useDispatch } from "react-redux";
-import { toggleSidebar } from "../features/navbarSlice";
+import { toggleSidebar } from "../features/navbar/navbarSlice";
 
 const NavBarSection = () => {
   const dispatch = useDispatch();

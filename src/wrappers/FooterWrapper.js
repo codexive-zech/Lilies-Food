@@ -3,7 +3,7 @@ import styled from "styled-components";
 const FooterWrapper = styled.section`
   .footer {
     display: grid;
-    background-color: #000;
+    background-color: #0b0d17;
     color: var(--color-white);
     padding: 1rem;
     text-align: center;

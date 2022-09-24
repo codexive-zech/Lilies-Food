@@ -3,7 +3,7 @@ import logo from "../images/liliesLogo.png";
 import { FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
-import { toggleSidebar } from "../features/navbarSlice";
+import { toggleSidebar } from "../features/navbar/navbarSlice";
 import SidebarWrapper from "../wrappers/SidebarWrapper";
 
 const Sidebar = () => {
@@ -22,13 +22,22 @@ const Sidebar = () => {
           </button>
         </div>
         <ul className="sidebar-links">
-          <li className="sidebar-link">
+          <li
+            className="sidebar-link"
+            onClick={() => dispatch(toggleSidebar())}
+          >
             <Link to="/">Home</Link>
           </li>
-          <li className="sidebar-link">
+          <li
+            className="sidebar-link"
+            onClick={() => dispatch(toggleSidebar())}
+          >
             <Link to="/login">Login</Link>
           </li>
-          <li className="sidebar-link">
+          <li
+            className="sidebar-link"
+            onClick={() => dispatch(toggleSidebar())}
+          >
             <Link to="/register">Sign up</Link>
           </li>
         </ul>
