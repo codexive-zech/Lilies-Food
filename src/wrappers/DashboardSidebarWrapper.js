@@ -62,6 +62,7 @@ const DashboardSidebarWrapper = styled.section`
   @media screen and (min-width: 992px) {
     width: 22vw;
     height: 120vh;
+    position: relative;
     .big-sidebar {
       padding-top: 5rem;
 

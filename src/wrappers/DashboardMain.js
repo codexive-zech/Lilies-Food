@@ -132,7 +132,7 @@ const DashboardMainWrapper = styled.section`
   @media screen and (min-width: 992px) {
     .dashboard-title {
       place-items: start;
-      margin-top: 0.5rem;
+      margin-top: 1.5rem;
 
       h3 {
         font-size: 23px;
@@ -144,11 +144,11 @@ const DashboardMainWrapper = styled.section`
       }
     }
     .menu-section {
-      margin-top: 0.7rem;
+      margin-top: 2rem;
 
       .menu {
         grid-template-columns: repeat(3, 1fr);
-        gap: 1.7rem;
+        gap: 3rem;
 
         .menu-info {
           .title {

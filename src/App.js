@@ -9,6 +9,7 @@ import {
   Cart,
   SharedLayout,
   ProtectedRoute,
+  Food,
 } from "./pages";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -28,6 +29,7 @@ function App() {
           <Route path="order" element={<Order />} />
           <Route path="profile" element={<Profile />} />
           <Route path="cart" element={<Cart />} />
+          <Route path=":foodId" element={<Food />} />
         </Route>
         <Route path="landing" element={<Landing />} />
         <Route path="register" element={<Register />} />

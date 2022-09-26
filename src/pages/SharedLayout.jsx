@@ -5,6 +5,7 @@ import {
   SmallDashboardSidebar,
   DashboardNav,
 } from "../components";
+import { Dashboard, Food } from "../pages";
 import SharedLayoutWrapper from "../wrappers/SharedLayout";
 
 const SharedLayout = () => {

@@ -7,6 +7,7 @@ import Profile from "./Profile";
 import Order from "./Order";
 import Cart from "./Cart";
 import ProtectedRoute from "./ProtectedRoute";
+import Food from "./Food";
 
 export {
   Landing,
@@ -18,4 +19,5 @@ export {
   Order,
   Cart,
   ProtectedRoute,
+  Food,
 };

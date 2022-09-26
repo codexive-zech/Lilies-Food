@@ -2,9 +2,32 @@ import React from "react";
 import { getUserStorage } from "../utils/localStorageData";
 import DashboardMainWrapper from "../wrappers/DashboardMain";
 import mealList from "../utils/mealList";
+import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import {
+  toggleFoodSidebar,
+  toggleFoodSidebarButton,
+} from "../features/navbar/navbarSlice";
+import { saveToCart } from "../features/cart/cartSlice";
+import { useSelector } from "react-redux";
+import { setCartStorageItem } from "../utils/localStorageData";
 
 const Dashboard = () => {
   const loggedUser = getUserStorage();
+  const { totalCount } = useSelector((store) => store.cart);
+  const dispatch = useDispatch();
+
+  // const addFoodToCart = () => {
+  //   const cart = {
+  //     cartImage: image,
+  //     cartTitle: title,
+  //     quantity: totalCount,
+  //     unitPrice: price,
+  //     subTotal: totalCount * price,
+  //   };
+  //   dispatch(saveToCart(cart));
+  //   setCartStorageItem(cart);
+  // };
   return (
     <DashboardMainWrapper>
       <div className="dashboard-title">
@@ -16,30 +39,37 @@ const Dashboard = () => {
           {mealList.map((meal) => {
             const { id, title, image, mealInfo, price } = meal;
             return (
-              <article className="menu-info" key={id}>
-                <div className="meal-container">
-                  <img src={image} alt="" className="meal-image" />
-                </div>
-                <h3 className="title">{title}</h3>
-                <p className="info">{mealInfo}</p>
-                <div className="price-info">
-                  <p className="price">N {price}</p>
-                  <button className="cart-btn">Add to cart</button>
-                </div>
-              </article>
+              <Link to={`/${id}`} onClick={() => dispatch(toggleFoodSidebar())}>
+                <article className="menu-info" key={id}>
+                  <div className="meal-container">
+                    <img src={image} alt="" className="meal-image" />
+                  </div>
+                  <h3 className="title">{title}</h3>
+                  <p className="info">{mealInfo}</p>
+                  <div className="price-info">
+                    <p className="price">N {price}</p>
+                    <button
+                      // disabled={() => dispatch(toggleFoodSidebar())}
+                      className="cart-btn"
+                      onClick={() => {
+                        const cart = {
+                          cartImage: image,
+                          cartTitle: title,
+                          quantity: totalCount,
+                          unitPrice: price,
+                          subTotal: totalCount * price,
+                        };
+                        dispatch(saveToCart(cart));
+                        setCartStorageItem(cart);
+                      }}
+                    >
+                      On Sale
+                    </button>
+                  </div>
+                </article>
+              </Link>
             );
           })}
-          {/* <article className="menu-info">
-            <div className="meal-container">
-              <img src={pasta} alt="" className="meal-image" />
-            </div>
-            <h3 className="title">Stir Fry Pasta</h3>
-            <p className="info">The in-house pasta and chicken by chef Moose</p>
-            <div className="price-info">
-              <p className="price">N 1,000.00</p>
-              <button className="cart-btn">Add to cart</button>
-            </div>
-          </article> */}
         </div>
       </div>
     </DashboardMainWrapper>
