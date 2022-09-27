@@ -8,16 +8,6 @@ export const getUserStorage = () => {
   return userData;
 };
 
-// export const setCartStorage = (cart) => {
-//   localStorage.setItem("cart", JSON.stringify(cart));
-// };
-
-// export const getCartStorage = () => {
-//   const result = localStorage.getItem("cart");
-//   const cartData = result ? JSON.parse(result) : null;
-//   return cartData;
-// };
-
 // adding a func that get products already fetched and added to the local storage (value)
 export const getCartStorageItem = (cart) => {
   // getting product array in the local storage (store)

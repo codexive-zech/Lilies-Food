@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import {
   toggleFoodSidebar,
-  toggleFoodSidebarButton,
+  toggleAddFood,
 } from "../features/navbar/navbarSlice";
 import { saveToCart } from "../features/cart/cartSlice";
 import { useSelector } from "react-redux";
@@ -17,17 +17,6 @@ const Dashboard = () => {
   const { totalCount } = useSelector((store) => store.cart);
   const dispatch = useDispatch();
 
-  // const addFoodToCart = () => {
-  //   const cart = {
-  //     cartImage: image,
-  //     cartTitle: title,
-  //     quantity: totalCount,
-  //     unitPrice: price,
-  //     subTotal: totalCount * price,
-  //   };
-  //   dispatch(saveToCart(cart));
-  //   setCartStorageItem(cart);
-  // };
   return (
     <DashboardMainWrapper>
       <div className="dashboard-title">
@@ -49,7 +38,6 @@ const Dashboard = () => {
                   <div className="price-info">
                     <p className="price">N {price}</p>
                     <button
-                      // disabled={() => dispatch(toggleFoodSidebar())}
                       className="cart-btn"
                       onClick={() => {
                         const cart = {
@@ -60,10 +48,11 @@ const Dashboard = () => {
                           subTotal: totalCount * price,
                         };
                         dispatch(saveToCart(cart));
+                        dispatch(toggleAddFood());
                         setCartStorageItem(cart);
                       }}
                     >
-                      On Sale
+                      Add to cart
                     </button>
                   </div>
                 </article>

@@ -15,10 +15,13 @@ const navbarSlice = createSlice({
     toggleFoodSidebar: (state) => {
       state.isFoodSidebarOpen = !state.isFoodSidebarOpen;
     },
+    toggleAddFood: (state) => {
+      state.isFoodSidebarOpen = true;
+    },
   },
 });
 
-export const { toggleSidebar, toggleFoodSidebar, toggleFoodSidebarButton } =
+export const { toggleSidebar, toggleFoodSidebar, toggleAddFood } =
   navbarSlice.actions;
 
 export default navbarSlice.reducer;

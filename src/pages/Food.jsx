@@ -59,7 +59,13 @@ const Food = () => {
           </div>
           <div className="cart-count">
             <div className="btn-container">
-              <button onClick={() => dispatch(decreaseCount())}>-</button>
+              <button
+                onClick={() =>
+                  totalCount > 1 ? dispatch(decreaseCount()) : null
+                }
+              >
+                -
+              </button>
               <h3>{totalCount}</h3>
               <button onClick={() => dispatch(increaseCount())}>+</button>
             </div>

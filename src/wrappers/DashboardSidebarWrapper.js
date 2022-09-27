@@ -9,7 +9,9 @@ const DashboardSidebarWrapper = styled.section`
     background-color: #fbfbfb;
     color: #707070;
     height: 100vh;
-    border-radius: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    position: fixed;
 
     .big-sidebar {
       display: grid;
@@ -65,6 +67,7 @@ const DashboardSidebarWrapper = styled.section`
     position: relative;
     .big-sidebar {
       padding-top: 5rem;
+      height: 65vh;
 
       .dashboard-links {
         margin-top: 3.9rem;

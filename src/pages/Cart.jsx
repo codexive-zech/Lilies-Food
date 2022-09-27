@@ -5,14 +5,10 @@ import { useSelector } from "react-redux";
 import { getCartStorageItem } from "../utils/localStorageData";
 
 const Cart = () => {
-  const getCartItem = getCartStorageItem();
-  const { quantity } = useSelector((store) => store.cart);
-
   return (
     <CartWrapper>
       <Dashboard />
       <h3>Cart</h3>
-      <h3>{getCartItem?.quantity}</h3>
     </CartWrapper>
   );
 };
