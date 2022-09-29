@@ -1,9 +1,8 @@
 import React from "react";
 import DashboardSidebarWrapper from "../wrappers/DashboardSidebarWrapper";
-import logo from "../images/liliesLogo.png";
+import logo from "../images/DashboadLogo.png";
 import { FaHome, FaPeopleCarry, FaCalendar, FaBookmark } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { useDispatch } from "react-redux";
 
 const DashboardSidebar = () => {
   return (

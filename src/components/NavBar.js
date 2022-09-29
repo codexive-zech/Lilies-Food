@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../images/liliesLogo.png";
+import logo from "../images/Logo.png";
 import { Link } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 import { useDispatch } from "react-redux";

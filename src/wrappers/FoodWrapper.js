@@ -204,16 +204,19 @@ const FoodWrapper = styled.section`
         color: var(--primary-background);
         font-size: 2rem;
         margin-top: 0;
+        font-size: 1.5rem;
       }
 
       .food-info {
         margin-top: 0;
+        font-size: 1rem;
       }
 
       .food-details {
         column-gap: 2rem;
         font-weight: bold;
         font-size: 1.2rem;
+        font-size: 17px;
       }
 
       .cart-count {
@@ -234,12 +237,13 @@ const FoodWrapper = styled.section`
             background-color: var(--primary-clr);
             color: var(--primary-background);
             border: transparent;
-            font-size: 2rem;
+            font-size: 31px;
             cursor: pointer;
           }
 
           h3 {
             margin-top: 0.5rem;
+            font-size: 27px;
           }
         }
       }

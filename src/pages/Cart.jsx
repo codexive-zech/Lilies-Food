@@ -1,8 +1,6 @@
 import React from "react";
 import { Dashboard } from "../pages";
 import CartWrapper from "../wrappers/CartWrapper";
-import { useSelector } from "react-redux";
-import { getCartStorageItem } from "../utils/localStorageData";
 
 const Cart = () => {
   return (

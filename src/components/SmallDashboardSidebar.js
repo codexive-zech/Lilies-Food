@@ -6,7 +6,7 @@ import {
   FaBookmark,
   FaTimes,
 } from "react-icons/fa";
-import logo from "../images/liliesLogo.png";
+import logo from "../images/DashboadLogo.png";
 import { Link } from "react-router-dom";
 import SmallDashboardSidebarWrapper from "../wrappers/SmallDashboardSidebarWrapper";
 import { useSelector, useDispatch } from "react-redux";
@@ -54,7 +54,6 @@ const SmallDashboardSidebar = () => {
           >
             <FaCalendar size={20} />
             <h3>Order</h3>
-            <span className="order">6</span>
           </Link>
 
           <Link
@@ -64,7 +63,6 @@ const SmallDashboardSidebar = () => {
           >
             <FaBookmark size={20} />
             <h3>Your Cart</h3>
-            <span className="cart">6</span>
           </Link>
         </ul>
       </section>

@@ -4,7 +4,7 @@ import { toast } from "react-toastify";
 import { getCartStorageItem } from "../../utils/localStorageData";
 
 const initialState = {
-  carts: {},
+  carts: getCartStorageItem(),
   totalCount: 1,
   cartImage: "",
   cartTitle: "",
@@ -27,11 +27,19 @@ const cartSlice = createSlice({
       toast.success("Added To Cart Successfully");
       state.totalCount = 1;
     },
+    checkWork: () => {
+      return {
+        totalCount: getCartStorageItem()?.totalCount,
+        cartImage: getCartStorageItem()?.cartImage,
+        cartTitle: getCartStorageItem()?.cartTitle,
+      };
+    },
   },
 });
 
 // console.log(state);
 
-export const { increaseCount, decreaseCount, saveToCart } = cartSlice.actions;
+export const { increaseCount, decreaseCount, saveToCart, checkWork } =
+  cartSlice.actions;
 
 export default cartSlice.reducer;
