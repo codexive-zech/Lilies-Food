@@ -80,7 +80,7 @@ const Login = () => {
             <Link to="/register">Create an Account</Link>
           </button>
           <button>
-            <Link to="/#">Forget Password</Link>
+            <Link to="#">Forget Password</Link>
           </button>
         </div>
       </form>

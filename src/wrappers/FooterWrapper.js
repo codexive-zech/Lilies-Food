@@ -31,12 +31,12 @@ const FooterWrapper = styled.section`
       display: flex;
       justify-content: space-around;
       align-items: center;
-      height: 20vh;
+      height: 20%;
 
       .company,
       .support,
       .legal {
-        height: 18vh;
+        height: 18%;
       }
 
       .footer-links {
@@ -55,11 +55,11 @@ const FooterWrapper = styled.section`
 
   @media screen and (min-width: 992px) {
     .footer {
-      height: 35vh;
+      height: 35%;
       .company,
       .support,
       .legal {
-        height: 30vh;
+        height: 30%;
       }
     }
   }

@@ -12,7 +12,7 @@ const FoodWrapper = styled.section`
     right: 0;
     width: 100vw;
     padding: 2rem 1rem;
-    height: 100vh;
+    height: 100%;
     transform: translateX(100%);
 
     .close {
@@ -103,7 +103,7 @@ const FoodWrapper = styled.section`
       right: 0;
       width: 100vw;
       height: 100vh;
-      background-color: rgba(251, 251, 251, 0.6);
+      background-color: rgba(196, 196, 196, 0.42);
     }
     .single-food {
       transition: var(--transition);
@@ -117,7 +117,7 @@ const FoodWrapper = styled.section`
       right: 0;
       width: 55vw;
       padding: 0.5rem 1.7rem;
-      height: 100vh;
+      height: 100%;
       transform: translateX(100%);
 
       .close {
@@ -209,7 +209,7 @@ const FoodWrapper = styled.section`
 
       .food-info {
         margin-top: 0;
-        font-size: 1rem;
+        font-size: 1.1rem;
       }
 
       .food-details {

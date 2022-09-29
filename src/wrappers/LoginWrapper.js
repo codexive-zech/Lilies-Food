@@ -11,6 +11,13 @@ const LoginWrapper = styled.section`
     display: none;
   }
 
+  .form {
+    margin-top: 0;
+    h3 {
+      margin-top: 1rem;
+    }
+  }
+
   @media screen and (min-width: 992px) {
     .login-image-container {
       .login-image {

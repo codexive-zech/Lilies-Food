@@ -12,7 +12,6 @@ import {
 import { FaTimes } from "react-icons/fa";
 import { toggleFoodSidebar } from "../features/navbar/navbarSlice";
 import { setCartStorageItem } from "../utils/localStorageData";
-import { getQuantity } from "../features/cart/cartSlice";
 
 const Food = () => {
   const { totalCount } = useSelector((store) => store.cart);

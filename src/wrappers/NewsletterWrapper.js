@@ -73,7 +73,8 @@ const NewsletterWrapper = styled.section`
         display: flex;
         justify-content: center;
         .input {
-          height: 7vh;
+          padding: 0.5rem 0.85rem;
+          height: 7%;
           margin-right: 0.5rem;
           font-size: 18px;
           background: #f7f7f7;
@@ -82,7 +83,7 @@ const NewsletterWrapper = styled.section`
         }
         .btn {
           padding: 0.5rem 0.85rem;
-          height: 7vh;
+          height: 7%;
           font-weight: bold;
           font-size: 18px;
         }

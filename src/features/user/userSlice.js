@@ -13,9 +13,12 @@ const userSlice = createSlice({
     loginUser: () => {
       toast.success("Successfully Logged In");
     },
+    logoutUser: () => {
+      toast.success("Successfully Logged Out");
+    },
   },
 });
 
-export const { registerUser, loginUser } = userSlice.actions;
+export const { registerUser, loginUser, logoutUser } = userSlice.actions;
 
 export default userSlice.reducer;

@@ -20,12 +20,6 @@ const FooterLastWrapper = styled.section`
       justify-content: space-between;
       align-items: center;
       gap: 1rem;
-
-      /* .social-link {
-        background-color: #ccc;
-        padding: 0.2rem;
-        cursor:pointer
-      } */
     }
   }
 

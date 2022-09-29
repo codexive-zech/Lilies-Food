@@ -8,7 +8,7 @@ const DashboardSidebarWrapper = styled.section`
     width: 33vw;
     background-color: #fbfbfb;
     color: #707070;
-    height: 100vh;
+    height: 100%;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     position: fixed;
@@ -63,7 +63,7 @@ const DashboardSidebarWrapper = styled.section`
   }
   @media screen and (min-width: 992px) {
     width: 22vw;
-    height: 120vh;
+    height: 110%;
     position: relative;
     .big-sidebar {
       padding-top: 5rem;

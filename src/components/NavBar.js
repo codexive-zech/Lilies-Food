@@ -17,7 +17,7 @@ const NavBarSection = () => {
           </button>
           <ul className="nav-links">
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/landing">Home</Link>
             </li>
             <li>
               <Link to="/login">Login</Link>
