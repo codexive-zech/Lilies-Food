@@ -171,7 +171,6 @@ const LoginWrapper = styled.section`
           margin: 1rem auto;
           padding: 0.375rem 0.75rem;
           outline: 1px solid var(--primary-clr);
-
           border: transparent;
         }
 

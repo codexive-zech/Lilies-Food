@@ -25,10 +25,12 @@ const NewsletterWrapper = styled.section`
       align-items: center;
 
       .input {
-        width: 65%;
-        height: 100%;
-        margin-right: 1rem;
-        outline: none;
+        width: 50vw;
+        margin: 1rem;
+        padding: 0.375rem 0.75rem;
+        outline: 1px solid var(--primary-clr);
+        border: transparent;
+        border-radius: 5px;
       }
 
       .btn {
@@ -73,12 +75,13 @@ const NewsletterWrapper = styled.section`
         display: flex;
         justify-content: center;
         .input {
-          padding: 0.5rem 0.85rem;
-          height: 7%;
+          width: 20vw;
+          /* height: 70%; */
           margin-right: 0.5rem;
+          padding: 0.5rem 0.85rem;
+          border: transparent;
           font-size: 18px;
           background: #f7f7f7;
-          border: 1px solid #b3b3b3;
           border-radius: 5px;
         }
         .btn {
