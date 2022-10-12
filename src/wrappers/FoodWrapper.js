@@ -12,7 +12,7 @@ const FoodWrapper = styled.section`
     right: 0;
     width: 100vw;
     padding: 2rem 1rem;
-    height: 100%;
+    height: 130vh;
     transform: translateX(100%);
 
     .close {
@@ -24,6 +24,7 @@ const FoodWrapper = styled.section`
       color: red;
       font-size: 2rem;
       cursor: pointer;
+      transition: var(--transition);
     }
 
     .food-img {
