@@ -11,6 +11,8 @@ import { Link } from "react-router-dom";
 import SmallDashboardSidebarWrapper from "../wrappers/SmallDashboardSidebarWrapper";
 import { useSelector, useDispatch } from "react-redux";
 import { toggleSidebar } from "../features/navbar/navbarSlice";
+import { logoutUser } from "../features/user/userSlice";
+
 
 const SmallDashboardSidebar = () => {
   const { isSidebarOpen } = useSelector((store) => store.navbar);
@@ -63,6 +65,15 @@ const SmallDashboardSidebar = () => {
           >
             <FaBookmark size={20} />
             <h3>Your Cart</h3>
+          </Link>
+
+          <Link
+            className="dashboard-link"
+            to="/landing"
+            onClick={() => dispatch(logoutUser())}
+          >
+            <FaSignOutAlt size={20} />
+            <h3>Log Out</h3>
           </Link>
         </ul>
       </section>
