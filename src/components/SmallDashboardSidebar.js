@@ -5,6 +5,7 @@ import {
   FaCalendar,
   FaBookmark,
   FaTimes,
+  FaSignOutAlt,
 } from "react-icons/fa";
 import logo from "../images/DashboadLogo.png";
 import { Link } from "react-router-dom";
@@ -12,7 +13,6 @@ import SmallDashboardSidebarWrapper from "../wrappers/SmallDashboardSidebarWrapp
 import { useSelector, useDispatch } from "react-redux";
 import { toggleSidebar } from "../features/navbar/navbarSlice";
 import { logoutUser } from "../features/user/userSlice";
-
 
 const SmallDashboardSidebar = () => {
   const { isSidebarOpen } = useSelector((store) => store.navbar);
@@ -42,7 +42,7 @@ const SmallDashboardSidebar = () => {
 
           <Link
             className="dashboard-link"
-            to="/profile"
+            to="/#"
             onClick={() => dispatch(toggleSidebar())}
           >
             <FaPeopleCarry size={20} />
@@ -51,7 +51,7 @@ const SmallDashboardSidebar = () => {
 
           <Link
             className="dashboard-link "
-            to="/order"
+            to="/#"
             onClick={() => dispatch(toggleSidebar())}
           >
             <FaCalendar size={20} />
@@ -60,7 +60,7 @@ const SmallDashboardSidebar = () => {
 
           <Link
             className="dashboard-link"
-            to="/cart"
+            to="/#"
             onClick={() => dispatch(toggleSidebar())}
           >
             <FaBookmark size={20} />

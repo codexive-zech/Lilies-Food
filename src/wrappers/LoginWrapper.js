@@ -18,18 +18,6 @@ const LoginWrapper = styled.section`
     }
   }
 
-  @media screen and (min-width: 992px) {
-    .login-image-container {
-      .login-image {
-        display: block;
-        width: 50vw;
-        height: 100vh;
-        object-fit: cover;
-        border-radius: 7px;
-      }
-    }
-  }
-
   .form {
     width: 100vw;
     margin: 0 auto;
@@ -37,7 +25,6 @@ const LoginWrapper = styled.section`
     place-items: center;
     padding: 1rem;
     transition: 0.3s ease-in-out all;
-    margin-top: 10rem;
 
     h3 {
       color: var(--primary-background);
@@ -124,7 +111,7 @@ const LoginWrapper = styled.section`
 
   @media screen and (min-width: 768px) {
     .form {
-      margin-top: 10rem;
+      margin-top: 0.5rem;
 
       .btn {
         width: 84%;
@@ -146,6 +133,15 @@ const LoginWrapper = styled.section`
   }
 
   @media screen and (min-width: 992px) {
+    .login-image-container {
+      .login-image {
+        display: block;
+        width: 50vw;
+        height: 100vh;
+        object-fit: cover;
+        border-radius: 7px;
+      }
+    }
     .form {
       width: 90vw;
       margin: 0 auto;

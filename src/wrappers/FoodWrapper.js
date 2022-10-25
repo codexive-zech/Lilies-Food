@@ -12,7 +12,7 @@ const FoodWrapper = styled.section`
     right: 0;
     width: 100vw;
     padding: 2rem 1rem;
-    height: 130vh;
+    height: 100vh;
     transform: translateX(100%);
 
     .close {

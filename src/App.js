@@ -6,7 +6,6 @@ import {
   Dashboard,
   Order,
   Profile,
-  Cart,
   SharedLayout,
   ProtectedRoute,
   Food,
@@ -28,7 +27,6 @@ function App() {
           <Route index element={<Dashboard />} />
           <Route path="order" element={<Order />} />
           <Route path="profile" element={<Profile />} />
-          <Route path="cart" element={<Cart />} />
           <Route path=":foodId" element={<Food />} />
         </Route>
         <Route path="landing" element={<Landing />} />
